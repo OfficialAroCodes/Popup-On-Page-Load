@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #cecece;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+.PopupPosition {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.PopupShow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.PopupBox {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.IconBox {
+    display: flex;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: #8dd0d9;
+}
+
+.PopupHeader {
+    font-size: 175%;
+    font-weight: 700;
+}
+
+.PopupTextInfo {
+    font-size: 105%;
+    font-weight: 500;
+    max-width: 350px;
+    text-wrap: balance;
+}
+
+.PopupButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.CancelBTN {
+    width: 100%;
+    font-size: 110%;
+    font-weight: 500;
+    padding: 8px 15px;
+    border: 1px #000 solid;
+    border-radius: 25px;
+    color: #000;
+    background: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.CancelBTN:hover {
+    background: #000;
+    color: #fff;
+}
+
+.SubmitBTN {
+    width: 100%;
+    font-size: 110%;
+    font-weight: 500;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    background: #8dd0d9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.SubmitBTN:hover {
+    background: #99e2eb;
+}
